@@ -3,17 +3,17 @@
 Remember: The Ch347 module is able to handle only Master mode for SPI and I2C.
 
 
-In Driver: 
+In Driver:
 
-   the original driver for ch347 device patched for removed all warning
+     the original driver for ch347 device patched for removed all warning
 
 In myHidraw:
 
-    the first demo working (the SPI has some problem) with warning clean and some changes only library test purpose
+     the first demo working (the SPI has some problem) with warning clean and some changes only library test purpose
  
-In demo: 
+In demo:
 
-   the userspace application working (without real test on target a part USB adapter) with warning cleanup
+     the userspace application working (without real test on target a part USB adapter) with warning cleanup
 
 
 # Datasheet CH347, driver and windows demo:
@@ -42,7 +42,7 @@ https://github.com/WCHSoftGroup/ch347.git
 
 1) kernel driver path ..../mych347/Driver (tacken from CH347Par_Linux_V1.02_HID.zip):
 
-     cd /usr/src/kernels/linux-"`uname -r`" (test with success on 6.2.10)
+     cd /usr/src/kernels/linux-\`uname -r\` (test with success on 6.2.10)
      
      make -C ..../mych347/Driver
      
