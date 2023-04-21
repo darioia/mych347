@@ -30,6 +30,7 @@ https://github.com/WCHSoftGroup/ch347.git
 
 
 ########### CH347 driver ############
+
 1) kernel driver path ..../mych347/Driver (tacken from CH347Par_Linux_V1.02_HID.zip):
      cd /usr/src/kernels/linux-`uname -r` (test with success on 6.2.10)
      make -C ..../mych347/Driver
@@ -41,15 +42,16 @@ https://github.com/WCHSoftGroup/ch347.git
 
 
 ############ Userspace ##############
+
 2)  Copy the library files:
      ..../USB-HS-Bridge/doc/CH347Par_Linux_V1.02_HID.zip:/Libs/X86_64/libc347.so -> /usr/local/lib64 (opt)
      ..../USB-HS-Bridge/doc/CH347SPI_LINUX_VTEST.tar:/CH347SPI_LINUX_VTEST/lib/x86_64/libch347spi.so -> /usr/local/lib64 (opt)
      sudo ldconfig
 
-2) Userspace hidraw demo here ..../mych347/myHidraw    (for  I2C/SPI/JTAG/GPIO)
+3) Userspace hidraw demo here ..../mych347/myHidraw    (for  I2C/SPI/JTAG/GPIO)
    language translation from chinese language, fixed (I hope) file descriptor handling and all warning removed
 
-3) Userspace ch347_demo here ..../mych347/demo  (for  I2C/SPI/JTAG/GPIO)
+4) Userspace ch347_demo here ..../mych347/demo  (for  I2C/SPI/JTAG/GPIO)
    language translation from chinese language and all warning removed
 
 
