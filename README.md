@@ -9,7 +9,7 @@ In Driver:
 
 In myHidraw:
 
-     the first demo working (the SPI has some problem) with warning clean and some changes only library test purpose
+    the first demo working (the SPI has some problem) with warning clean and some changes only library test purpose
  
 In demo: 
 
@@ -42,14 +42,14 @@ https://github.com/WCHSoftGroup/ch347.git
 
 1) kernel driver path ..../mych347/Driver (tacken from CH347Par_Linux_V1.02_HID.zip):
 
-     cd /usr/src/kernels/linux-`uname -r` (test with success on 6.2.10)
+     cd /usr/src/kernels/linux-"`uname -r`" (test with success on 6.2.10)
      
      make -C ..../mych347/Driver
      
      sudo make -C ..../mych347/Driver install
      
      sudo modprobe -a ch34x-pis
-     
+
 
 2) add the following line in /etc/modules-load.d/modules.conf
 
